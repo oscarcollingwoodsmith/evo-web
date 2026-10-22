@@ -36,7 +36,7 @@ jobs:
           fi
   # Deployment job
   deploy:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && github.repository_owner == 'ebay'
     permissions:
       contents: write
     environment:
