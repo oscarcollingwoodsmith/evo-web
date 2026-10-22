@@ -42,7 +42,7 @@ export const horizontal = () => `
         </div>
 
         <div class="card__action">
-            <button class="btn btn--primary">See Details</button>
+            <button class="btn btn--primary btn--fluid">See Details</button>
         </div>
     </div>
 </div>
