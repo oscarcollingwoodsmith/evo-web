@@ -1,0 +1,25 @@
+export interface Input extends Marko.HTML.Button {
+  variant?: "inline" | "standalone";
+  onEscape?: (event: KeyboardEvent) => void;
+}
+
+<const/{
+  class: inputClass,
+  variant = "inline",
+  type = "button",
+  onEscape,
+  onKeyDown,
+  ...htmlInput
+}=input>
+
+<button
+  ...htmlInput
+  class=[inputClass, "fake-link", variant === "standalone" && "standalone-link"]
+  type=type
+  onKeyDown(e, el) {
+    if (e.key === "Escape" && !input.disabled) {
+      onEscape && onEscape(e);
+    }
+    onKeyDown && onKeyDown(e, el);
+  }
+/>

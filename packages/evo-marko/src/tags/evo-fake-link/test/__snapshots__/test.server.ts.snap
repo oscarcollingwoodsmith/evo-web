@@ -1,0 +1,38 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`evo-fake-link SSR > renders default 1`] = `
+"<button
+  class="fake-link"
+  type="button"
+>
+  Fake link
+</button>"
+`;
+
+exports[`evo-fake-link SSR > renders disabled 1`] = `
+"<button
+  class="fake-link"
+  disabled=""
+  type="button"
+>
+  Fake link
+</button>"
+`;
+
+exports[`evo-fake-link SSR > renders standalone 1`] = `
+"<button
+  class="fake-link standalone-link"
+  type="button"
+>
+  Standalone fake link
+</button>"
+`;
+
+exports[`evo-fake-link SSR > renders with type override 1`] = `
+"<button
+  class="fake-link"
+  type="submit"
+>
+  Fake link
+</button>"
+`;
