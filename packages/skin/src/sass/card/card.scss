@@ -133,6 +133,10 @@ button.card:hover {
     margin-inline-start: 0;
 }
 
+.card--horizontal .card__action {
+    align-self: flex-start;
+}
+
 .card--full-hero .card__media {
     margin: 0;
     margin-block-end: var(--spacing-200);
